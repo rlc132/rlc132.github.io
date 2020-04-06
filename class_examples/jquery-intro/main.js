@@ -2,11 +2,14 @@ $(document).ready(function() {
 //all js goes in here
   console.log("we loaded");
 
-$("#title").click(function() {
+$("#button1")
+.click(function() {
+$("#title").click(function()
   // code that runs when you clock on the part of the page that has id title.
   // $("#title").css("color", "#f9423a");
   // $("#title").css("font-size", "500px");
   $("#title").addClass("big-text");
+  console.log("this ran");
 });
 
 $("button2").click(function() {
@@ -14,14 +17,22 @@ $("button2").click(function() {
 $("#title").removeClass("big-text");
 });
 
-$("p").mouseover(function() {
-  $("p").css("font-size", "21px");
+$("#box").mousedown(function() {
+  $("#box").css("background-color", "green");
 });
 
-$("p").mouseleave(function() {
-  $("p").css("background-color", "yellow");
-  $("p").css("font-size", "16px");
-});
+
+
+// $("p").mouseover(function() {
+//   $("p").css("font-size", "21px");
+// });
+
+
+
+
+//   $("p").css("background-color", "yellow");
+//   $("p").css("font-size", "16px");
+// });
 // $("#title").css("font-size", "500px");
 // $("#title").html("More information #1");
 
