@@ -5,6 +5,10 @@ body{
   background-color: #FF00FF;
 }
 
+.html{
+  display: grid;
+}
+
 .title {
   font-family: fantasy;
   text-align: center;
@@ -17,7 +21,7 @@ body{
   /*height and width is for content itself.*/
 }
 
-.intro{
+h1{
 
 }
 
@@ -28,10 +32,14 @@ header{
   /*height and width is for content itself.*/
   text-align: center;
 }
- main, footer, h3{
+ footer, h3{
    border: 6px solid #00FF00;
   background-color: #FF00FF;
   text-align: center;
+}
+
+main{
+ text-align: center;
 }
 
 h3{
@@ -52,7 +60,7 @@ border: 6px solid #00FF00;
 
 
 .grid-placeContent{
-
+grid-column: 1/2;
 }
 
 
@@ -63,24 +71,10 @@ border: 6px solid #00FF00;
 }
 
 .grid-placeName{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid blue;
+  grid-column: 1/2;
 }
 
-.placeInfo{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid blue;
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
 
-.placeImage{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid blue;
-}
 
 .closer{
   font-family: fantasy;

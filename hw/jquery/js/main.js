@@ -2,45 +2,37 @@ $(document).ready(function() {
   //all js goes in here
   console.log("we loaded");
 
-  $("#title").css("color", "#bada55");
-  $("#title").html("How to Make a Medianoche Cuban Sandwich");
+$("h1").doStuff();
 
-  $("#button1")
-  .click(function() {
-  $("#title").click(function()
-    // code that runs when you clock on the part of the page that has id title.
-    // $("#title").css("color", "#f9423a");
-    // $("#title").css("font-size", "500px");
-    $("#title").addClass("big-text");
-    console.log("this ran");
-  });
+$( "#button1" )
+			.click( function() {
+				// Code that runs when you click on the part of the page that has id="button1".
+				$( "#title" )
+					.addClass( "big-text" );
+			} );
 
-  $("button2").click(function() {
-    // stuff we put here will happen when you click button2.
-  $("#title").removeClass("big-text");
-  });
+		$( "#button2" )
+			.click( function() {
+				// stuff we put here will happen when you click button2.
+				// in this case we remove the class called big-text from
+				// the part of the page that has id=title
+				$( "#title" )
+					.removeClass( "big-text" );
+			} );
 
-  $("#box").mousedown(function() {
-    $("#box").css("background-color", "green");
-
-    $("#finishedpic").mouseover(function(){
-      $("body").css("background-color", "#B0BF1A");
-  });
-
-
-
-  // $("p").mouseover(function() {
-  //   $("p").css("font-size", "21px");
-  // });
-
-
-
-
-  //   $("p").css("background-color", "yellow");
-  //   $("p").css("font-size", "16px");
-  // });
-  // $("#title").css("font-size", "500px");
-  // $("#title").html("More information #1");
-
-
-});
+      $( "p" )
+			.mouseover( function() {
+				// when your mouse is over a paragraph, the font size will become 21px
+				$( "p" )
+					.css( "font-size", "21px" );
+			} );
+      $( "p" )
+      			.mouseleave( function() {
+      				// when your mouse leaves a paragraph the font-size will get smaller
+      				// and the background-color of the paragraph will become yellow
+      				$( "p" )
+      					.css( "background-color", "yellow" );
+      				$( "p" )
+      					.css( "font-size", "16px" );
+      			} );
+            	} );
