@@ -6,6 +6,9 @@ body{
 }
 
 .html{
+  font-family: "inter", sans-serif;
+  font-size: 25px;
+  line-height: 1;
   display: grid;
 }
 

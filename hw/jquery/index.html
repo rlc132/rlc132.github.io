@@ -1,78 +1,107 @@
 <!DOCTYPE html>
 <html class="html" lang="en" dir="ltr">
-<head>
-  	<!--<meta charset="utf-8">-->
-	<title>How To: Medianoche Sandwich</title>
-  <meta name="author:" content="Raul">
-  <meta name="description" content="This is an intro to making good sandwiches">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-</head>
 
-<body>
-<header>
-  <h1 id="title" class="title">How To Make A Cuban Medianoche Sandwich.</h1>
-  <!-- add navigation for steps -->
-<p class ="intro">A <i><b>Cuban medianoche</b></i> (Spanish for "middle of the night") is the kind of sandwich you eat when no other sandwich can do it for you. It's almost identical to a Cuban sandwich but just twice as tasty.Made with all kinds of meat, Swiss cheese and all that sweet Latin love. A real men's and women's sandwich.</p>
-<img src="images/sand4.jpg" width="300" height="200" alt="prime-Sandwich">
-</header>
+	<head>
+		<meta charset="utf-8">
+		<title>How To: Medianoche Sandwich</title>
+		<meta name="author:" content="Raul">
+		<meta name="description" content="This is an intro to making good sandwiches">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-<h2>Que necesitas (Ingredients)</h2>
-<ul>
-<li>Publix Cuban bread</li>
-<li>pickles</li>
-<li>mayonaise</li>
-<li>thinly-sliced cooked ham</li>
-<li>thinly-sliced cooked pork</li>
-<li>thinly-sliced Swiss cheese</li>
-<li>light butter</li>
-<li>stoagie</li>
-</ul>
-  <section>
-    <button type="button" name="button" id="button1">Show</button>
-    <button type="button" name="button" id="button2">Hide</button>
-  </section>
+	<body>
+		<header>
+			<h1 id="title" class="title">How To Make a Cuban Medianoche Sandwich.</h1>
+			<!-- add navigation for steps -->
+			<p class="intro">A <i><b>Cuban medianoche</b></i> (Spanish for "middle of the night") is the kind of sandwich you eat when no other sandwich can do it for you. It's almost identical to a Cuban sandwich but just twice as tasty. Made with all
+				kinds of meat, Swiss cheese and all that sweet Latin love. A real men's and women's sandwich.</p>
+			<img src="images/sand4.jpg" width="300" height="200" alt="prime-Sandwich">
+			<nav>
+				<a href="#ingredients">Ingredients</a>
+				<a href="#recipe">recipe</a>
+			</nav>
+		</header>
 
-<main>
-<h2>How to make the sandwich</h2>
-<section class="grid-placeContent">
-  <h3>Step 1</h3>
-    <img class="placeImage" src="images/sand2.jpg" width="300" height="300" alt="Sandwich">
-    <p class="placeInfo">Cut your Publix Cuban bread in half, and spread mustard and mayonnaise on the sides.</p>
-  </section>
+		<h2 id="ingredients">Que necesitas (Ingredients)</h2>
+		<section>
+			<button type="button" name="button" id="button1">Show</button>
+			<button type="button" name="button" id="button2">Hide</button>
+		</section>
+		<ul id="ingredientList">
+			<li>Publix Cuban bread</li>
+			<li>pickles</li>
+			<li>mayonaise</li>
+			<li>thinly-sliced cooked ham</li>
+			<li>thinly-sliced cooked pork</li>
+			<li>thinly-sliced Swiss cheese</li>
+			<li>light butter</li>
+			<li>stoagie</li>
+		</ul>
 
-  <section class="grid-placeContent">
-    <h3>Step 2</h3>
-    <img class="placeImage" src="images/sand1.jpg" width="300" height="300" alt="Sandwich">
-    <p class="placeInfo">Then, cut fine slices of Swiss cheese, ham and pork in exactly that order onto the bread.Place a few pickles and put the two breads together, then brush the tops with melted butter.</p>
-  </section>
 
-  <section class="grid-placeContent">
-    <h3>Step 3</h3>
-    <img class="placeImage" src="images/sand3.jpg" width="300" height="300" alt="Sandwich">
-    <p class="placeInfo">Place it on a sandwich press if possible. If not, grab a spatula, press it and heat it up in a microstove for 5-8 minutes.</p>
-  </section>
+		<main>
 
-  <section class="grid-placeContent">
-    <h3>Step 4</h3>
-    <img class="placeImage" src="images/sand5.jpg" width="300" height="300" alt="Sandwich">
-    <p class="placeInfo">While Waiting, flip them once for even browning. Finally, slice them diagonally and serve hot with a side of tiny fries.</p>
-  </section>
+			<h2 id="recipe">How to make the sandwich</h2>
+			<h3>Step 1</h3>
+			<section>
+				<button type="button" name="button" id="button3">Show</button>
+				<button type="button" name="button" id="button4">Hide</button>
+			</section>
+			<section id="step1description" class="grid-placeContent">
+				<img class="placeImage" src="images/sand2.jpg" width="350" height="300" alt="Sandwich">
+					<p class="placeInfo">Cut your Publix Cuban bread in half, and spread mustard and mayonnaise on the sides.</p>
+			</section>
 
-  <section class="grid-placeContent">
-    <h3>Step 5</h3>
-    <img class="placeImage" src="images/cuban.jpg" width="300" height="300" alt="Sandwich">
-    <p class="placeInfo">Light up a stoagie and enjoy your sandwich, meng!</p>
-  </section>
+     <h3>Step 2</h3>
+			<section>
+				<button type="button" name="button" id="button5">Show</button>
+				<button type="button" name="button" id="button6">Hide</button>
+			</section>
+			<section id="step2description" class="grid-placeContent">
+				<img class="placeImage" src="images/sand1.jpg" width="300" height="300" alt="Sandwich">
+				<p class="placeInfo">Then, cut fine slices of Swiss cheese, ham and pork in exactly that order onto the bread.Place a few pickles and put the two breads together, then brush the tops with melted butter.</p>
+			</section>
 
-  </main>
-<!-- Common positon for javascript number 1 -->
-<script src="jquery.js" charset="utf-8"></script>
-<script src="main.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <footer class="closer">
-      <p>The images above were taken from <a href="https://www.saveur.com/medianoche-sandwich-recipe/">HERE</a>.</p>
-  </footer>
-</body>
+      <h3>Step 3</h3>
+			<section>
+				<button type="button" name="button" id="button7">Show</button>
+				<button type="button" name="button" id="button8">Hide</button>
+			</section>
+			<section id="step3description" class="grid-placeContent">
+				<img class="placeImage" src="images/sand3.jpg" width="300" height="300" alt="Sandwich">
+				<p class="placeInfo">Place it on a sandwich press if possible. If not, grab a spatula, press it and heat it up in a microstove for 5-8 minutes.</p>
+			</section>
+
+      <h3>Step 4</h3>
+			<section>
+				<button type="button" name="button" id="button9">Show</button>
+				<button type="button" name="button" id="button10">Hide</button>
+			</section>
+			<section id="step4description" class="grid-placeContent">
+				<img class="placeImage" src="images/sand5.jpg" width="300" height="300" alt="Sandwich">
+				<p class="placeInfo">While Waiting, flip them once for even browning. Finally, slice them diagonally and serve hot with a side of fries.</p>
+			</section>
+
+			<h3>Step 5</h3>
+			<section>
+				<button type="button" name="button" id="button11">Show</button>
+				<button type="button" name="button" id="button12">Hide</button>
+			</section>
+			<section id="step5description" class="grid-placeContent">
+				<img class="placeImage" src="images/cuban.jpg" width="300" height="300" alt="Sandwich">
+				<p class="placeInfo">Light up a stoagie and enjoy your sandwich, meng!</p>
+			</section>
+
+		</main>
+		<footer class="closer">
+			The images above were taken from <a href="https://www.saveur.com/medianoche-sandwich-recipe/">HERE!</a>.
+		</footer>
+		<!-- Common positon for javascript number 1 -->
+		<script src="js/jquery.js" charset="utf-8"></script>
+		<script src="js/main.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+
+	</body>
 
 </html>
