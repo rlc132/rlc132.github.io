@@ -1,0 +1,70 @@
+body{
+  display: grid;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color:#E8C31E;
+}
+
+.html{
+  font-family: "inter", sans-serif;
+  font-size: 25px;
+  line-height: 1;
+  display: grid;
+}
+
+.title {
+  font-family: fantasy;
+  text-align: center;
+  border:20px solid #00FF00;
+  /* padding is for space between content and border */
+  /* if you have 2 values of padding,they are applied in pairs, top/bottom and right/left */
+  padding: 20px;
+  /* margin is for the space between the border and other boxes */
+  margin: 0px;
+  /*height and width is for content itself.*/
+}
+
+
+header{
+  padding: 20px;
+  /* margin is for the space between the border and other boxes */
+  margin: 20px;
+  /*height and width is for content itself.*/
+  text-align: center;
+}
+ footer, h3{
+   border: 6px solid #00FF00;
+  background-color: #FF00FF;
+  text-align: center;
+}
+
+main{
+ text-align: center;
+}
+
+h3{
+  font-family: fantasy;
+}
+
+h2{
+  font-family: fantasy;
+border: 6px solid #00FF00;
+  text-align: center;
+}
+
+.ing-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid yellow;
+}
+
+.grid-placeName{
+  grid-column: 1/2;
+}
+
+
+
+.closer{
+  font-family: fantasy;
+  text-align: center;
+}
