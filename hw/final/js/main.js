@@ -3,70 +3,74 @@ $(document).ready(function() {
   console.log("we loaded");
 
 
-  $("#title").mouseover(function() {
-    // when you mouseover the title, the font of the title grows bigger
-    $("#title").css("font-size", "60px");
-    });
+    $("#akira").mouseover(function () {
+     $("#akira").css("font-size", "60px");
+   })
 
-    $("#title").click(function() {
+   $("#cw").mouseover(function () {
+    $("#cw").css("font-size", "60px");
+  })
 
-    $("#title").html("How To Make a damn good Cuban Medianoche Sandwich.");
+  $("#dbz").mouseover(function () {
+   $("#dbz").css("font-size", "60px");
+ })
+
+ $("#king").mouseover(function () {
+  $("#king").css("font-size", "60px");
+})
+
+$("#hitch").mouseover(function () {
+ $("#hitch").css("font-size", "60px");
+})
+
+$("#supes").mouseover(function () {
+$("#supes").css("font-size", "60px");
+})
+
+$("#x").mouseover(function () {
+ $("#x").css("font-size", "60px");
+})
+
+$("#hobbit").mouseover(function () {
+ $("#hobbit").css("font-size", "60px");
+})
+
+$("#rusty").mouseover(function () {
+$("#rusty").css("font-size", "60px");
+})
+
+$("#intro")
+  .mouseover(function() {
+    // when your mouse is over a paragraph, the font size will become 21px
+    $("#intro")
+      .css("font-size", "35px");
   });
 
-  $("#button1").click(function() {
-    // when you click the show button, show the hidden ingredient list
-    $("#ingredientList").show();
+$("#intro")
+  .mouseleave(function() {
+    // when your mouse leaves a paragraph the font-size will get smaller
+    // and the background-color of the paragraph will become yellow
+
+    $("#intro")
+      .css("font-size", "20px");
   });
 
-  $("#button2").click(function() {
-    // when you click the hide button, hide the ingredient list
-    $("#ingredientList").hide();
-  });
+     // When the user scrolls the page, execute myFunction
+     window.onscroll = function() {myFunction()};
 
-    $("#button3").click(function() {
-      // when you click the hide button, show step 1
-      $("#step1description").show();
-    });
+     // Get the header
+     var header = document.getElementById("title");
 
-    $("#button4").click(function() {
-      // when you click the hide button, hide step 1
-      $("#step1description").hide();
-    });
+     // Get the offset position of the navbar
+     var sticky = header.offsetTop;
 
-    $("#button11").click(function() {
-      // when you click the hide button, show step 1
-      $("#step2description").show();
-    });
+     // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+     function myFunction() {
+       if (window.pageYOffset > sticky) {
+         header.classList.add("sticky");
+       } else {
+         header.classList.remove("sticky");
+       }
+     }
 
-    $("#button22").click(function() {
-      // when you click the hide button, hide step 1
-      $("#step2description").hide();
-    });
-
-    $("#button33").click(function() {
-      // when you click the hide button, show step 1
-      $("#step3description").show();
-    });
-
-    $("#button44").click(function() {
-      // when you click the hide button, hide step 1
-      $("#step3description").hide();
-    });
-
-  $("p")
-    .mouseover(function() {
-      // when your mouse is over a paragraph, the font size will become 21px
-      $("p")
-        .css("font-size", "35px");
-    });
-
-  $("p")
-    .mouseleave(function() {
-      // when your mouse leaves a paragraph the font-size will get smaller
-      // and the background-color of the paragraph will become yellow
-      $("p")
-        .css("background-color", "#ffff0d");
-      $("p")
-        .css("font-size", "16px");
-    });
 });
